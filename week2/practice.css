@@ -1,0 +1,467 @@
+/* ==========================================
+   CSS PRACTICE FILE
+   Author : Throshan
+   ========================================== */
+
+/* 1. Body */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:30px;
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Headings */
+
+h1{
+    text-align:center;
+    color:#003366;
+}
+
+h2{
+    color:#0066cc;
+    margin-top:40px;
+}
+
+hr{
+    margin:30px 0;
+}
+
+/* ==========================================
+   2. Element Selector
+   ========================================== */
+
+p{
+    font-size:18px;
+}
+
+/* ==========================================
+   3. Class Selector
+   ========================================== */
+
+.heading{
+    color:green;
+    font-weight:bold;
+}
+
+/* ==========================================
+   4. ID Selector
+   ========================================== */
+
+#title{
+    color:darkblue;
+    text-align:center;
+}
+
+/* ==========================================
+   5. Background
+   ========================================== */
+
+.box{
+    background:lightblue;
+    padding:20px;
+    margin:15px 0;
+}
+
+/* ==========================================
+   6. Border
+   ========================================== */
+
+.border{
+    border:2px solid black;
+    padding:15px;
+}
+
+/* ==========================================
+   7. Margin & Padding
+   ========================================== */
+
+.card{
+    background:white;
+    margin:20px;
+    padding:20px;
+}
+
+/* ==========================================
+   8. Text Styling
+   ========================================== */
+
+.text{
+    color:red;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+/* ==========================================
+   9. Font Styling
+   ========================================== */
+
+.font{
+    font-family:Georgia;
+    font-size:24px;
+    font-style:italic;
+}
+
+/* ==========================================
+   10. Button Hover
+   ========================================== */
+
+.btn{
+
+    background:#1976D2;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.4s;
+
+}
+
+.btn:hover{
+
+    background:#0D47A1;
+    transform:translateY(-4px);
+
+}
+
+/* ==========================================
+   11. Box Shadow
+   ========================================== */
+
+.shadow{
+
+    width:250px;
+    padding:20px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+}
+
+/* ==========================================
+   12. Border Radius
+   ========================================== */
+
+.round{
+
+    border:2px solid blue;
+    border-radius:15px;
+    padding:20px;
+
+}
+
+/* ==========================================
+   13. Linear Gradient
+   ========================================== */
+
+.gradient{
+
+    background:linear-gradient(to right,#2196F3,#00BCD4);
+    color:white;
+    padding:20px;
+
+}
+
+/* ==========================================
+   14. Flexbox
+   ========================================== */
+
+.container{
+
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+
+}
+
+.container div{
+
+    background:#2196F3;
+    color:white;
+    padding:25px;
+    flex:1;
+    text-align:center;
+
+}
+
+/* ==========================================
+   15. Grid
+   ========================================== */
+
+.grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+
+}
+
+.grid div{
+
+    background:#4CAF50;
+    color:white;
+    padding:20px;
+    text-align:center;
+
+}
+
+/* ==========================================
+   16. Transition
+   ========================================== */
+
+.transition{
+
+    background:#2196F3;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    transition:.5s;
+    cursor:pointer;
+
+}
+
+.transition:hover{
+
+    background:red;
+
+}
+
+/* ==========================================
+   17. Transform
+   ========================================== */
+
+.transform{
+
+    width:150px;
+    background:orange;
+    padding:20px;
+    text-align:center;
+    transition:.5s;
+
+}
+
+.transform:hover{
+
+    transform:scale(1.2);
+
+}
+
+/* ==========================================
+   18. Animation
+   ========================================== */
+
+.animation{
+
+    width:100px;
+    height:100px;
+    background:red;
+    position:relative;
+    animation:move 2s infinite alternate;
+
+}
+
+@keyframes move{
+
+    from{
+
+        left:0;
+
+    }
+
+    to{
+
+        left:250px;
+
+    }
+
+}
+
+/* ==========================================
+   19. Navigation Bar
+   ========================================== */
+
+.navbar{
+
+    list-style:none;
+    background:#003366;
+    display:flex;
+    padding:0;
+
+}
+
+.navbar li{
+
+    padding:15px 20px;
+
+}
+
+.navbar li a{
+
+    color:white;
+    text-decoration:none;
+
+}
+
+.navbar li:hover{
+
+    background:#0055aa;
+
+}
+
+/* ==========================================
+   20. Card Design
+   ========================================== */
+
+.profile-card{
+
+    width:300px;
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+
+}
+
+/* ==========================================
+   21. Tables
+   ========================================== */
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+
+}
+
+table,th,td{
+
+    border:1px solid gray;
+
+}
+
+th{
+
+    background:#1976D2;
+    color:white;
+
+}
+
+th,td{
+
+    padding:12px;
+    text-align:center;
+
+}
+
+tr:nth-child(even){
+
+    background:#f2f2f2;
+
+}
+
+/* ==========================================
+   22. Forms
+   ========================================== */
+
+input,
+select,
+textarea{
+
+    width:300px;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid gray;
+    border-radius:5px;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    outline:none;
+    border-color:#1976D2;
+    box-shadow:0 0 10px rgba(25,118,210,.3);
+
+}
+
+/* ==========================================
+   23. Images
+   ========================================== */
+
+img{
+
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+/* ==========================================
+   24. Links
+   ========================================== */
+
+a{
+
+    color:#0066cc;
+    text-decoration:none;
+
+}
+
+a:hover{
+
+    color:red;
+    text-decoration:underline;
+
+}
+
+/* ==========================================
+   25. Lists
+   ========================================== */
+
+ul{
+
+    list-style-type:square;
+
+}
+
+ol{
+
+    list-style-type:upper-roman;
+
+}
+
+/* ==========================================
+   26. Media Query
+   ========================================== */
+
+@media(max-width:768px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.grid{
+
+    grid-template-columns:1fr;
+
+}
+
+body{
+
+    margin:15px;
+
+}
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+}
+
+}
