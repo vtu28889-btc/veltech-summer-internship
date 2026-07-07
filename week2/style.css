@@ -1,7 +1,4 @@
-/* ===========================
-   South Central Railway
-   Intern Registration Portal
-   =========================== */
+
 
 *{
     margin:0;
@@ -15,7 +12,7 @@ body{
     padding:40px;
 }
 
-/* Main Container */
+
 
 table{
     width:80%;
@@ -27,7 +24,7 @@ table{
     box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
-/* Heading */
+
 
 h2{
     color:#003366;
@@ -48,7 +45,7 @@ hr{
     border:1px solid #0056b3;
 }
 
-/* Fieldset */
+
 
 fieldset{
     margin:20px;
@@ -70,21 +67,21 @@ legend{
     padding:0 10px;
 }
 
-/* Labels */
+
 
 label{
     font-weight:bold;
     color:#333;
 }
 
-/* Table */
+
 
 td{
     padding:12px;
     vertical-align:top;
 }
 
-/* Input Fields */
+
 
 input[type=text],
 input[type=date],
@@ -114,7 +111,7 @@ textarea:focus{
 
 }
 
-/* Radio & Checkbox */
+
 
 input[type=radio],
 input[type=checkbox]{
@@ -125,7 +122,7 @@ input[type=checkbox]{
 
 }
 
-/* Submit Button */
+
 
 input[type=submit]{
 
@@ -147,7 +144,7 @@ input[type=submit]:hover{
 
 }
 
-/* Reset Button */
+
 
 input[type=reset]{
 
@@ -169,7 +166,7 @@ input[type=reset]:hover{
 
 }
 
-/* Smooth Animation */
+
 
 table{
 
@@ -191,7 +188,7 @@ to{
 
 }
 
-/* Responsive */
+
 
 @media(max-width:768px){
 
