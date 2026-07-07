@@ -1,4 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intern Onboarding Portal - SCR</title>
 
     <style>
@@ -15,7 +20,6 @@ body{
     padding:40px;
 }
 
-
 table{
     width:80%;
     margin:auto;
@@ -27,23 +31,23 @@ table{
     animation:fadeIn 1s ease;
 }
 
-
 h2{
     color:#0D47A1;
     margin-top:20px;
     font-size:30px;
+    text-align:center;
 }
 
 h3{
     color:#555;
     margin:10px 0;
+    text-align:center;
 }
 
 hr{
     border:1px solid #1976D2;
     margin-bottom:20px;
 }
-
 
 fieldset{
     border:2px solid #1976D2;
@@ -64,20 +68,18 @@ legend{
     padding:0 10px;
 }
 
-
 label{
     font-weight:bold;
     color:#333;
 }
 
-
-
 input[type=text],
+input[type=email],
+input[type=tel],
 input[type=date],
+input[type=file],
 select,
-textarea,
-input[type=file]{
-
+textarea{
     width:100%;
     padding:10px;
     border:1px solid #bbb;
@@ -93,26 +95,19 @@ textarea{
 input:focus,
 select:focus,
 textarea:focus{
-
     outline:none;
     border-color:#1976D2;
     box-shadow:0 0 10px rgba(25,118,210,.4);
 }
 
-
-
 input[type=radio],
 input[type=checkbox]{
-
     margin-right:8px;
     transform:scale(1.1);
     cursor:pointer;
 }
 
-
-
 input[type=submit]{
-
     background:#1565C0;
     color:white;
     border:none;
@@ -125,15 +120,12 @@ input[type=submit]{
 }
 
 input[type=submit]:hover{
-
     background:#0D47A1;
     transform:translateY(-3px);
     box-shadow:0 10px 20px rgba(0,0,0,.25);
-
 }
 
 input[type=reset]{
-
     background:#757575;
     color:white;
     border:none;
@@ -145,40 +137,119 @@ input[type=reset]{
 }
 
 input[type=reset]:hover{
-
     background:#424242;
     transform:translateY(-3px);
 }
 
-
-
 td{
-
     padding:10px;
     vertical-align:top;
-
 }
-
-
 
 @keyframes fadeIn{
-
-from{
-
-opacity:0;
-transform:translateY(20px);
-
-}
-
-to{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
     </style>
 
 </head>
+
+<body>
+
+<table>
+
+<tr>
+<td>
+
+<h2>Intern Onboarding Portal</h2>
+<h3>SCR</h3>
+<hr>
+
+<form>
+
+<fieldset>
+
+<legend>Personal Information</legend>
+
+<label>Full Name</label><br>
+<input type="text" placeholder="Enter your full name"><br><br>
+
+<label>Email</label><br>
+<input type="email" placeholder="Enter your email"><br><br>
+
+<label>Phone Number</label><br>
+<input type="tel" placeholder="Enter phone number"><br><br>
+
+<label>Date of Birth</label><br>
+<input type="date"><br><br>
+
+<label>Gender</label><br>
+
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+
+</fieldset>
+
+<fieldset>
+
+<legend>Education</legend>
+
+<label>Highest Qualification</label><br>
+
+<select>
+<option>Select</option>
+<option>B.Tech</option>
+<option>B.Sc</option>
+<option>B.Com</option>
+<option>M.Tech</option>
+<option>MBA</option>
+</select>
+
+<br><br>
+
+<label>Skills</label><br>
+
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+<input type="checkbox"> JavaScript
+<input type="checkbox"> PHP
+
+</fieldset>
+
+<fieldset>
+
+<legend>Documents</legend>
+
+<label>Upload Resume</label><br>
+<input type="file">
+
+<br><br>
+
+<label>Address</label><br>
+
+<textarea rows="5" placeholder="Enter your address"></textarea>
+
+</fieldset>
+
+<center>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</center>
+
+</form>
+
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>
